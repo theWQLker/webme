@@ -1,0 +1,123 @@
+@charset "UTF-8";
+/* Style des éléments de la grille */
+/*@media screen and (max-width: 767px) {
+
+      /* Règles pour les écrans étroits avec une largeur maximale de 767 pixels */
+/* .grid-container {
+            grid-template-columns: 1fr;
+            /* Définit une seule colonne pour les écrans étroits */
+/*   }
+
+    /*  .grid-item {
+            background-color: red;
+            /* Couleur de fond des éléments de la grille pour les écrans
+      étroits */
+/*  }/*
+} */
+.container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 20px;
+  margin: 20px;
+}
+
+.item {
+  background-color: #e5e5e5;
+  padding: 20px;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-gap: 10px;
+}
+
+.grid-item {
+  background-color: #e5e5e5;
+  padding: 20px;
+  text-align: center;
+}
+
+body {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto 1fr auto;
+  grid-gap: 20px;
+  min-height: 100vh;
+  margin: 0;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+  background-color: #f9f9f9;
+}
+
+header {
+  grid-column: 1/-1;
+  padding: 20px;
+  background-color: #133;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-decoration: solid;
+}
+header h1 {
+  margin: 0;
+}
+
+nav ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  text-decoration: wavy;
+}
+nav ul li {
+  margin-right: 10px;
+}
+nav ul li a {
+  text-decoration: wavy;
+  color: #ffffff;
+}
+
+.main-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 10px;
+  grid-template-columns: 1fr;
+}
+
+.article {
+  display: grid;
+  grid-template-columns: 1fr;
+  padding: 20px;
+  background-color: #fff;
+  grid-template-columns: 1fr;
+}
+
+article h2 {
+  margin: 0;
+}
+article p {
+  margin-bottom: 20px;
+}
+
+.sidebar {
+  padding: 20px;
+  background-color: #2e2424;
+  color: #f9f9f9;
+  grid-template-columns: 1fr;
+}
+.sidebar h3 {
+  margin: 0 0 10px;
+}
+
+footer {
+  grid-column: 1/-1;
+  padding: 20px;
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+}
+
+/*# sourceMappingURL=styles.css.map */
